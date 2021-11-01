@@ -1,0 +1,4 @@
+tbump>=5.0.4
+setuptools>=40.6.2
+wheel>=0.33.1
+twine==1.13.0
