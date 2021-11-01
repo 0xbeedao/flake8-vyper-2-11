@@ -6,8 +6,8 @@ from flake8.main import application, options
 from flake8.processor import PyCF_ONLY_AST, FileProcessor
 from flake8.options import manager
 
-from vyper.builtin_functions.functions import BUILTIN_FUNCTIONS
-from vyper.semantics.namespace import RESERVED_KEYWORDS
+from vyper.functions.functions import BUILTIN_FUNCTIONS
+from vyper.context.namespace import RESERVED_KEYWORDS
 from vyper.utils import (
     BASE_TYPES,
     FUNCTION_WHITELIST, 
@@ -15,7 +15,7 @@ from vyper.utils import (
 )
 from vyper.ast.folding import BUILTIN_CONSTANTS
 from vyper.ast.pre_parser import pre_parse
-from vyper.old_codegen.expr import ENVIRONMENT_VARIABLES
+from vyper.parser.expr import ENVIRONMENT_VARIABLES
 
 # Below is orginal author
 # This code forked by @0xBeeDao (DevBruce)
